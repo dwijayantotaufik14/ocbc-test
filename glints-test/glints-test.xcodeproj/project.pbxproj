@@ -1,0 +1,831 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F1F31955E0E3B8396E9A1CD /* Pods_glints_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EC6B766BE92B8608AE44F60 /* Pods_glints_test.framework */; };
+		3037AE3827834FE900C5C4D2 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3037AE3727834FE900C5C4D2 /* Settings.swift */; };
+		3037AE3B278350C600C5C4D2 /* URLConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3037AE3A278350C600C5C4D2 /* URLConstant.swift */; };
+		3037AE3D278350CF00C5C4D2 /* URLManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3037AE3C278350CF00C5C4D2 /* URLManager.swift */; };
+		3037AE42278352FD00C5C4D2 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3037AE41278352FD00C5C4D2 /* APIManager.swift */; };
+		3037AE442783530700C5C4D2 /* APIWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3037AE432783530700C5C4D2 /* APIWorker.swift */; };
+		3056D05E27834BA600331461 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3056D05D27834BA600331461 /* AppDelegate.swift */; };
+		3056D06027834BA600331461 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3056D05F27834BA600331461 /* SceneDelegate.swift */; };
+		3056D06227834BA600331461 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3056D06127834BA600331461 /* ViewController.swift */; };
+		3056D06527834BA600331461 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3056D06327834BA600331461 /* Main.storyboard */; };
+		3056D06727834BA900331461 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3056D06627834BA900331461 /* Assets.xcassets */; };
+		3056D06A27834BA900331461 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3056D06827834BA900331461 /* LaunchScreen.storyboard */; };
+		3056D07527834BA900331461 /* glints_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3056D07427834BA900331461 /* glints_testTests.swift */; };
+		3056D07F27834BA900331461 /* glints_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3056D07E27834BA900331461 /* glints_testUITests.swift */; };
+		3056D08127834BA900331461 /* glints_testUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3056D08027834BA900331461 /* glints_testUITestsLaunchTests.swift */; };
+		AA87C2F2C088C84F92D94FB3 /* Pods_glints_test_glints_testUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45D0115588E08FEA1768A2D5 /* Pods_glints_test_glints_testUITests.framework */; };
+		F713FDAB0BB589C41CC74759 /* Pods_glints_testTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2917847F36B0EF7986FA4374 /* Pods_glints_testTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3056D07127834BA900331461 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3056D05227834BA600331461 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3056D05927834BA600331461;
+			remoteInfo = "glints-test";
+		};
+		3056D07B27834BA900331461 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3056D05227834BA600331461 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3056D05927834BA600331461;
+			remoteInfo = "glints-test";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2917847F36B0EF7986FA4374 /* Pods_glints_testTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_glints_testTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3037AE3727834FE900C5C4D2 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		3037AE3A278350C600C5C4D2 /* URLConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConstant.swift; sourceTree = "<group>"; };
+		3037AE3C278350CF00C5C4D2 /* URLManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLManager.swift; sourceTree = "<group>"; };
+		3037AE41278352FD00C5C4D2 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		3037AE432783530700C5C4D2 /* APIWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIWorker.swift; sourceTree = "<group>"; };
+		3056D05A27834BA600331461 /* glints-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "glints-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3056D05D27834BA600331461 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3056D05F27834BA600331461 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3056D06127834BA600331461 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3056D06427834BA600331461 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3056D06627834BA900331461 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3056D06927834BA900331461 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3056D06B27834BA900331461 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3056D07027834BA900331461 /* glints-testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "glints-testTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3056D07427834BA900331461 /* glints_testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = glints_testTests.swift; sourceTree = "<group>"; };
+		3056D07A27834BA900331461 /* glints-testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "glints-testUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3056D07E27834BA900331461 /* glints_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = glints_testUITests.swift; sourceTree = "<group>"; };
+		3056D08027834BA900331461 /* glints_testUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = glints_testUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		45D0115588E08FEA1768A2D5 /* Pods_glints_test_glints_testUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_glints_test_glints_testUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52F8925609B180A4B99F8054 /* Pods-glints-test-glints-testUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-glints-test-glints-testUITests.debug.xcconfig"; path = "Target Support Files/Pods-glints-test-glints-testUITests/Pods-glints-test-glints-testUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6EC6B766BE92B8608AE44F60 /* Pods_glints_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_glints_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70063BF153C71CCC91D6BE19 /* Pods-glints-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-glints-test.release.xcconfig"; path = "Target Support Files/Pods-glints-test/Pods-glints-test.release.xcconfig"; sourceTree = "<group>"; };
+		B8FDF6A72D30A12692B0663E /* Pods-glints-testTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-glints-testTests.debug.xcconfig"; path = "Target Support Files/Pods-glints-testTests/Pods-glints-testTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BA5EF97CEBF3C92674FF79C3 /* Pods-glints-testTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-glints-testTests.release.xcconfig"; path = "Target Support Files/Pods-glints-testTests/Pods-glints-testTests.release.xcconfig"; sourceTree = "<group>"; };
+		E0DE2584897F32FBD9902159 /* Pods-glints-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-glints-test.debug.xcconfig"; path = "Target Support Files/Pods-glints-test/Pods-glints-test.debug.xcconfig"; sourceTree = "<group>"; };
+		E98D8177C2DFB1397100E625 /* Pods-glints-test-glints-testUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-glints-test-glints-testUITests.release.xcconfig"; path = "Target Support Files/Pods-glints-test-glints-testUITests/Pods-glints-test-glints-testUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3056D05727834BA600331461 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F1F31955E0E3B8396E9A1CD /* Pods_glints_test.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3056D06D27834BA900331461 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F713FDAB0BB589C41CC74759 /* Pods_glints_testTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3056D07727834BA900331461 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA87C2F2C088C84F92D94FB3 /* Pods_glints_test_glints_testUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3037AE3627834FB400C5C4D2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3037AE392783509800C5C4D2 /* Network */,
+				3037AE3727834FE900C5C4D2 /* Settings.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3037AE392783509800C5C4D2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3037AE3A278350C600C5C4D2 /* URLConstant.swift */,
+				3037AE3C278350CF00C5C4D2 /* URLManager.swift */,
+				3037AE41278352FD00C5C4D2 /* APIManager.swift */,
+				3037AE432783530700C5C4D2 /* APIWorker.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3037AE3E2783522200C5C4D2 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		3037AE3F2783522F00C5C4D2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3037AE402783523500C5C4D2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3056D05127834BA600331461 = {
+			isa = PBXGroup;
+			children = (
+				3056D05C27834BA600331461 /* glints-test */,
+				3056D07327834BA900331461 /* glints-testTests */,
+				3056D07D27834BA900331461 /* glints-testUITests */,
+				3056D05B27834BA600331461 /* Products */,
+				4158553ECB5248DA1C897DF5 /* Pods */,
+				A08425445EE4DA24C6755941 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3056D05B27834BA600331461 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3056D05A27834BA600331461 /* glints-test.app */,
+				3056D07027834BA900331461 /* glints-testTests.xctest */,
+				3056D07A27834BA900331461 /* glints-testUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3056D05C27834BA600331461 /* glints-test */ = {
+			isa = PBXGroup;
+			children = (
+				3037AE402783523500C5C4D2 /* Model */,
+				3037AE3F2783522F00C5C4D2 /* View */,
+				3037AE3E2783522200C5C4D2 /* View Model */,
+				3037AE3627834FB400C5C4D2 /* Common */,
+				3056D05D27834BA600331461 /* AppDelegate.swift */,
+				3056D05F27834BA600331461 /* SceneDelegate.swift */,
+				3056D06127834BA600331461 /* ViewController.swift */,
+				3056D06327834BA600331461 /* Main.storyboard */,
+				3056D06627834BA900331461 /* Assets.xcassets */,
+				3056D06827834BA900331461 /* LaunchScreen.storyboard */,
+				3056D06B27834BA900331461 /* Info.plist */,
+			);
+			path = "glints-test";
+			sourceTree = "<group>";
+		};
+		3056D07327834BA900331461 /* glints-testTests */ = {
+			isa = PBXGroup;
+			children = (
+				3056D07427834BA900331461 /* glints_testTests.swift */,
+			);
+			path = "glints-testTests";
+			sourceTree = "<group>";
+		};
+		3056D07D27834BA900331461 /* glints-testUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3056D07E27834BA900331461 /* glints_testUITests.swift */,
+				3056D08027834BA900331461 /* glints_testUITestsLaunchTests.swift */,
+			);
+			path = "glints-testUITests";
+			sourceTree = "<group>";
+		};
+		4158553ECB5248DA1C897DF5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E0DE2584897F32FBD9902159 /* Pods-glints-test.debug.xcconfig */,
+				70063BF153C71CCC91D6BE19 /* Pods-glints-test.release.xcconfig */,
+				52F8925609B180A4B99F8054 /* Pods-glints-test-glints-testUITests.debug.xcconfig */,
+				E98D8177C2DFB1397100E625 /* Pods-glints-test-glints-testUITests.release.xcconfig */,
+				B8FDF6A72D30A12692B0663E /* Pods-glints-testTests.debug.xcconfig */,
+				BA5EF97CEBF3C92674FF79C3 /* Pods-glints-testTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A08425445EE4DA24C6755941 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EC6B766BE92B8608AE44F60 /* Pods_glints_test.framework */,
+				45D0115588E08FEA1768A2D5 /* Pods_glints_test_glints_testUITests.framework */,
+				2917847F36B0EF7986FA4374 /* Pods_glints_testTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3056D05927834BA600331461 /* glints-test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3056D08427834BA900331461 /* Build configuration list for PBXNativeTarget "glints-test" */;
+			buildPhases = (
+				422708856787F60121C15AA4 /* [CP] Check Pods Manifest.lock */,
+				3056D05627834BA600331461 /* Sources */,
+				3056D05727834BA600331461 /* Frameworks */,
+				3056D05827834BA600331461 /* Resources */,
+				DCD1F81D00B59AB4AA569304 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "glints-test";
+			productName = "glints-test";
+			productReference = 3056D05A27834BA600331461 /* glints-test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3056D06F27834BA900331461 /* glints-testTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3056D08727834BA900331461 /* Build configuration list for PBXNativeTarget "glints-testTests" */;
+			buildPhases = (
+				62A73794056217BE3460F812 /* [CP] Check Pods Manifest.lock */,
+				3056D06C27834BA900331461 /* Sources */,
+				3056D06D27834BA900331461 /* Frameworks */,
+				3056D06E27834BA900331461 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3056D07227834BA900331461 /* PBXTargetDependency */,
+			);
+			name = "glints-testTests";
+			productName = "glints-testTests";
+			productReference = 3056D07027834BA900331461 /* glints-testTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3056D07927834BA900331461 /* glints-testUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3056D08A27834BA900331461 /* Build configuration list for PBXNativeTarget "glints-testUITests" */;
+			buildPhases = (
+				8902FBFBF874A9AD82729C30 /* [CP] Check Pods Manifest.lock */,
+				3056D07627834BA900331461 /* Sources */,
+				3056D07727834BA900331461 /* Frameworks */,
+				3056D07827834BA900331461 /* Resources */,
+				6A40EF165CA72A9198EF80E0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3056D07C27834BA900331461 /* PBXTargetDependency */,
+			);
+			name = "glints-testUITests";
+			productName = "glints-testUITests";
+			productReference = 3056D07A27834BA900331461 /* glints-testUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3056D05227834BA600331461 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					3056D05927834BA600331461 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					3056D06F27834BA900331461 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 3056D05927834BA600331461;
+					};
+					3056D07927834BA900331461 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 3056D05927834BA600331461;
+					};
+				};
+			};
+			buildConfigurationList = 3056D05527834BA600331461 /* Build configuration list for PBXProject "glints-test" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3056D05127834BA600331461;
+			productRefGroup = 3056D05B27834BA600331461 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3056D05927834BA600331461 /* glints-test */,
+				3056D06F27834BA900331461 /* glints-testTests */,
+				3056D07927834BA900331461 /* glints-testUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3056D05827834BA600331461 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3056D06A27834BA900331461 /* LaunchScreen.storyboard in Resources */,
+				3056D06727834BA900331461 /* Assets.xcassets in Resources */,
+				3056D06527834BA600331461 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3056D06E27834BA900331461 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3056D07827834BA900331461 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		422708856787F60121C15AA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-glints-test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62A73794056217BE3460F812 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-glints-testTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A40EF165CA72A9198EF80E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-glints-test-glints-testUITests/Pods-glints-test-glints-testUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-glints-test-glints-testUITests/Pods-glints-test-glints-testUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-glints-test-glints-testUITests/Pods-glints-test-glints-testUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8902FBFBF874A9AD82729C30 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-glints-test-glints-testUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCD1F81D00B59AB4AA569304 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-glints-test/Pods-glints-test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-glints-test/Pods-glints-test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-glints-test/Pods-glints-test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3056D05627834BA600331461 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3056D06227834BA600331461 /* ViewController.swift in Sources */,
+				3056D05E27834BA600331461 /* AppDelegate.swift in Sources */,
+				3037AE3827834FE900C5C4D2 /* Settings.swift in Sources */,
+				3037AE3B278350C600C5C4D2 /* URLConstant.swift in Sources */,
+				3056D06027834BA600331461 /* SceneDelegate.swift in Sources */,
+				3037AE3D278350CF00C5C4D2 /* URLManager.swift in Sources */,
+				3037AE442783530700C5C4D2 /* APIWorker.swift in Sources */,
+				3037AE42278352FD00C5C4D2 /* APIManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3056D06C27834BA900331461 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3056D07527834BA900331461 /* glints_testTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3056D07627834BA900331461 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3056D07F27834BA900331461 /* glints_testUITests.swift in Sources */,
+				3056D08127834BA900331461 /* glints_testUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3056D07227834BA900331461 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3056D05927834BA600331461 /* glints-test */;
+			targetProxy = 3056D07127834BA900331461 /* PBXContainerItemProxy */;
+		};
+		3056D07C27834BA900331461 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3056D05927834BA600331461 /* glints-test */;
+			targetProxy = 3056D07B27834BA900331461 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3056D06327834BA600331461 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3056D06427834BA600331461 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3056D06827834BA900331461 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3056D06927834BA900331461 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3056D08227834BA900331461 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3056D08327834BA900331461 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3056D08527834BA900331461 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0DE2584897F32FBD9902159 /* Pods-glints-test.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				API_SERVER_BASE_URL = "https://green-thumb-64168.uc.r.appspot.com/";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6DDCY3955U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "glints-test/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.glints-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3056D08627834BA900331461 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70063BF153C71CCC91D6BE19 /* Pods-glints-test.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				API_SERVER_BASE_URL = "https://green-thumb-64168.uc.r.appspot.com/";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6DDCY3955U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "glints-test/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.glints-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		3056D08827834BA900331461 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8FDF6A72D30A12692B0663E /* Pods-glints-testTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6DDCY3955U;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.glints-testTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/glints-test.app/glints-test";
+			};
+			name = Debug;
+		};
+		3056D08927834BA900331461 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA5EF97CEBF3C92674FF79C3 /* Pods-glints-testTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6DDCY3955U;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.glints-testTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/glints-test.app/glints-test";
+			};
+			name = Release;
+		};
+		3056D08B27834BA900331461 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52F8925609B180A4B99F8054 /* Pods-glints-test-glints-testUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6DDCY3955U;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.glints-testUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "glints-test";
+			};
+			name = Debug;
+		};
+		3056D08C27834BA900331461 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E98D8177C2DFB1397100E625 /* Pods-glints-test-glints-testUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6DDCY3955U;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.glints-testUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "glints-test";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3056D05527834BA600331461 /* Build configuration list for PBXProject "glints-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3056D08227834BA900331461 /* Debug */,
+				3056D08327834BA900331461 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3056D08427834BA900331461 /* Build configuration list for PBXNativeTarget "glints-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3056D08527834BA900331461 /* Debug */,
+				3056D08627834BA900331461 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3056D08727834BA900331461 /* Build configuration list for PBXNativeTarget "glints-testTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3056D08827834BA900331461 /* Debug */,
+				3056D08927834BA900331461 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3056D08A27834BA900331461 /* Build configuration list for PBXNativeTarget "glints-testUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3056D08B27834BA900331461 /* Debug */,
+				3056D08C27834BA900331461 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3056D05227834BA600331461 /* Project object */;
+}
