@@ -56,7 +56,7 @@ class APIManager {
             }
     }
     
-    func postHttpRequest(_ request: URLRequest, _ token: String?="", ignoreToken: Bool, callback: @escaping apiCallback) {
+    func postHttpRequest(_ request: URLRequest, _ token: String?="", callback: @escaping apiCallback) {
         AF.request(request)
             .validate()
             .responseDecodable(of: DecodableType.self) { response in

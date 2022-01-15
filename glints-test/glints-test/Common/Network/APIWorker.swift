@@ -42,6 +42,6 @@ class APIWorker {
         
         request = headersBuilder.buildHeader(url: &request, headerConstants: &headerConstant)
         
-        apiManager.getHttpRequest(request, callback: callback)
+        apiManager.postHttpRequest(request, callback: callback)
     }
 }

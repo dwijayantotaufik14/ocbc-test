@@ -8,20 +8,15 @@
 import Foundation
 
 enum TransactionsModel {
-    struct Response: Codable {
-        var status: String?
-        var data: [TransactionsData]?
-        
-        init(){}
-    }
     
-    struct TransactionsData: Codable {
+    struct Response: Codable {
         var transactionId: String?
         var amount: Decimal?
         var transactionDate: String?
         var description: String?
         var transactionType: String?
         var receipient: Receipient?
+        var sender: Sender?
         
         init(){}
     }
@@ -31,5 +26,17 @@ enum TransactionsModel {
         var accountHolder: String?
         
         init(){}
+    }
+    
+    struct Sender: Codable {
+        var accountNo: String?
+        var accountHolder: String?
+        
+        init(){}
+    }
+    
+    struct GroupedTransactions {
+        var transactions: [String: [Response]]?
+        var transactionDate: [String]?
     }
 }

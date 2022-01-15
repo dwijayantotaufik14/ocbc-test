@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="glints_test" customModuleProvider="target">
+            <connections>
+                <outlet property="confirmPassTextField" destination="SOd-nl-qqp" id="zXt-1I-K2g"/>
+                <outlet property="errorLabel" destination="nVX-7b-cKk" id="koS-nI-sBd"/>
+                <outlet property="passwordTextField" destination="8tr-DR-9WF" id="IBS-pS-PgH"/>
+                <outlet property="usernameTextField" destination="c2U-vk-MnO" id="ta7-VY-EEH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USz-Xq-DBE">
+                    <rect key="frame" x="35" y="129" width="98" height="30"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c2U-vk-MnO" customClass="FloatingLabelField" customModule="glints_test" customModuleProvider="target">
+                    <rect key="frame" x="35" y="204" width="344" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="15t-wK-RN5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelColor">
+                            <color key="value" red="0.0" green="0.42745098040000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="activeBorderColor">
+                            <color key="value" red="0.0039215686269999999" green="0.38823529410000002" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SOd-nl-qqp" customClass="FloatingLabelField" customModule="glints_test" customModuleProvider="target">
+                    <rect key="frame" x="35" y="352" width="344" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="pvX-ze-4HV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelColor">
+                            <color key="value" red="0.0" green="0.42745098040000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="activeBorderColor">
+                            <color key="value" red="0.0039215686269999999" green="0.38823529410000002" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm password not match" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVX-7b-cKk">
+                    <rect key="frame" x="35" y="410" width="344" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" systemColor="systemRedColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqk-qA-ijw">
+                    <rect key="frame" x="35" y="86.5" width="30" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="Kly-VW-7uW"/>
+                        <constraint firstAttribute="width" secondItem="hqk-qA-ijw" secondAttribute="height" multiplier="1:1" id="hPg-eq-VPB"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" backgroundImage="arrow.backward" catalog="system">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="backButtonAction:" destination="-1" eventType="touchUpInside" id="XXw-vZ-QkV"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8tr-DR-9WF" customClass="FloatingLabelField" customModule="glints_test" customModuleProvider="target">
+                    <rect key="frame" x="35" y="278" width="344" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="BaL-ex-pJN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelColor">
+                            <color key="value" red="0.0" green="0.42745098040000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="activeBorderColor">
+                            <color key="value" red="0.0039215686269999999" green="0.38823529410000002" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cZ-Uu-puB">
+                    <rect key="frame" x="35" y="792" width="344" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="AKK-lC-GS6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="REGISTER">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="registerButtonAction:" destination="-1" eventType="touchUpInside" id="Ghq-dd-jJo"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="8tr-DR-9WF" firstAttribute="trailing" secondItem="c2U-vk-MnO" secondAttribute="trailing" id="4Jc-Kf-qvt"/>
+                <constraint firstItem="c2U-vk-MnO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="35" id="4vD-Bx-hHP"/>
+                <constraint firstItem="hqk-qA-ijw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="35" id="6Hn-tN-xWu"/>
+                <constraint firstItem="SOd-nl-qqp" firstAttribute="trailing" secondItem="c2U-vk-MnO" secondAttribute="trailing" id="AYK-Po-uIL"/>
+                <constraint firstItem="SOd-nl-qqp" firstAttribute="top" secondItem="8tr-DR-9WF" secondAttribute="bottom" constant="24" id="D1d-Zk-UH5"/>
+                <constraint firstItem="SOd-nl-qqp" firstAttribute="leading" secondItem="c2U-vk-MnO" secondAttribute="leading" id="Dub-Ru-5fX"/>
+                <constraint firstItem="USz-Xq-DBE" firstAttribute="top" secondItem="hqk-qA-ijw" secondAttribute="bottom" constant="15" id="G4R-r1-6uC"/>
+                <constraint firstItem="hqk-qA-ijw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="HaJ-aw-NF2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2cZ-Uu-puB" secondAttribute="trailing" constant="35" id="Icj-aa-gzW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="c2U-vk-MnO" secondAttribute="trailing" constant="35" id="L96-le-X6P"/>
+                <constraint firstItem="8tr-DR-9WF" firstAttribute="leading" secondItem="c2U-vk-MnO" secondAttribute="leading" id="PMh-ER-pK3"/>
+                <constraint firstItem="nVX-7b-cKk" firstAttribute="top" secondItem="SOd-nl-qqp" secondAttribute="bottom" constant="8" symbolic="YES" id="Ww0-vL-9U2"/>
+                <constraint firstItem="c2U-vk-MnO" firstAttribute="top" secondItem="USz-Xq-DBE" secondAttribute="bottom" constant="45" id="aOg-Md-Yj4"/>
+                <constraint firstItem="8tr-DR-9WF" firstAttribute="top" secondItem="c2U-vk-MnO" secondAttribute="bottom" constant="24" id="ewO-4c-LOB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="2cZ-Uu-puB" secondAttribute="bottom" constant="20" id="gAE-cI-FCX"/>
+                <constraint firstItem="nVX-7b-cKk" firstAttribute="leading" secondItem="SOd-nl-qqp" secondAttribute="leading" id="hLm-IE-0SJ"/>
+                <constraint firstItem="2cZ-Uu-puB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="35" id="sMT-ou-09Z"/>
+                <constraint firstItem="nVX-7b-cKk" firstAttribute="trailing" secondItem="SOd-nl-qqp" secondAttribute="trailing" id="wi8-70-1Ru"/>
+                <constraint firstItem="USz-Xq-DBE" firstAttribute="leading" secondItem="hqk-qA-ijw" secondAttribute="leading" id="yrw-y8-p90"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="130"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow.backward" catalog="system" width="128" height="98"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

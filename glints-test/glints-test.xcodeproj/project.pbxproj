@@ -12,6 +12,8 @@
 		3037AE3B278350C600C5C4D2 /* URLConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3037AE3A278350C600C5C4D2 /* URLConstant.swift */; };
 		3037AE3D278350CF00C5C4D2 /* URLManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3037AE3C278350CF00C5C4D2 /* URLManager.swift */; };
 		3037AE42278352FD00C5C4D2 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3037AE41278352FD00C5C4D2 /* APIManager.swift */; };
+		304A10B72786129A0074C7DE /* TransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304A10B52786129A0074C7DE /* TransferViewController.swift */; };
+		304A10B82786129A0074C7DE /* TransferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 304A10B62786129A0074C7DE /* TransferViewController.xib */; };
 		3056D05E27834BA600331461 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3056D05D27834BA600331461 /* AppDelegate.swift */; };
 		3056D06027834BA600331461 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3056D05F27834BA600331461 /* SceneDelegate.swift */; };
 		3056D06227834BA600331461 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3056D06127834BA600331461 /* ViewController.swift */; };
@@ -21,6 +23,15 @@
 		3056D07527834BA900331461 /* glints_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3056D07427834BA900331461 /* glints_testTests.swift */; };
 		3056D07F27834BA900331461 /* glints_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3056D07E27834BA900331461 /* glints_testUITests.swift */; };
 		3056D08127834BA900331461 /* glints_testUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3056D08027834BA900331461 /* glints_testUITestsLaunchTests.swift */; };
+		3088E1D52785EC1A00A5583C /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3088E1D42785EC1A00A5583C /* UIViewController+Extensions.swift */; };
+		3088E1D82785ED5700A5583C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3088E1D62785ED5700A5583C /* RegisterViewController.swift */; };
+		3088E1D92785ED5700A5583C /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3088E1D72785ED5700A5583C /* RegisterViewController.xib */; };
+		309388CD2792AED000DC4FAD /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309388CB2792AED000DC4FAD /* DashboardViewController.swift */; };
+		309388CE2792AED000DC4FAD /* DashboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 309388CC2792AED000DC4FAD /* DashboardViewController.xib */; };
+		309388D12792CC0500DC4FAD /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309388D02792CC0500DC4FAD /* UIView+Extensions.swift */; };
+		309388D52792CE8200DC4FAD /* TransactionHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309388D32792CE8200DC4FAD /* TransactionHistoryCell.swift */; };
+		309388D62792CE8200DC4FAD /* TransactionHistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 309388D42792CE8200DC4FAD /* TransactionHistoryCell.xib */; };
+		309388D82792D67D00DC4FAD /* Numeric+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309388D72792D67D00DC4FAD /* Numeric+Extensions.swift */; };
 		3098E59327836416003C5A74 /* FloatingLabelField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3098E59227836416003C5A74 /* FloatingLabelField.swift */; };
 		3098E59C278389C5003C5A74 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3098E59B278389C5003C5A74 /* LoginModel.swift */; };
 		3098E59E27838A8A003C5A74 /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3098E59D27838A8A003C5A74 /* RegisterModel.swift */; };
@@ -64,6 +75,8 @@
 		3037AE3A278350C600C5C4D2 /* URLConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConstant.swift; sourceTree = "<group>"; };
 		3037AE3C278350CF00C5C4D2 /* URLManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLManager.swift; sourceTree = "<group>"; };
 		3037AE41278352FD00C5C4D2 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		304A10B52786129A0074C7DE /* TransferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferViewController.swift; sourceTree = "<group>"; };
+		304A10B62786129A0074C7DE /* TransferViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferViewController.xib; sourceTree = "<group>"; };
 		3056D05A27834BA600331461 /* glints-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "glints-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3056D05D27834BA600331461 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3056D05F27834BA600331461 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +90,15 @@
 		3056D07A27834BA900331461 /* glints-testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "glints-testUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3056D07E27834BA900331461 /* glints_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = glints_testUITests.swift; sourceTree = "<group>"; };
 		3056D08027834BA900331461 /* glints_testUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = glints_testUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3088E1D42785EC1A00A5583C /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		3088E1D62785ED5700A5583C /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		3088E1D72785ED5700A5583C /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		309388CB2792AED000DC4FAD /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		309388CC2792AED000DC4FAD /* DashboardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardViewController.xib; sourceTree = "<group>"; };
+		309388D02792CC0500DC4FAD /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		309388D32792CE8200DC4FAD /* TransactionHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistoryCell.swift; sourceTree = "<group>"; };
+		309388D42792CE8200DC4FAD /* TransactionHistoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionHistoryCell.xib; sourceTree = "<group>"; };
+		309388D72792D67D00DC4FAD /* Numeric+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Numeric+Extensions.swift"; sourceTree = "<group>"; };
 		3098E59227836416003C5A74 /* FloatingLabelField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingLabelField.swift; sourceTree = "<group>"; };
 		3098E59B278389C5003C5A74 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		3098E59D27838A8A003C5A74 /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
@@ -134,6 +156,7 @@
 		3037AE3627834FB400C5C4D2 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				309388CF2792CBEF00DC4FAD /* Extensions */,
 				3098E58F278363C1003C5A74 /* Util */,
 				3037AE392783509800C5C4D2 /* Network */,
 				3037AE3727834FE900C5C4D2 /* Settings.swift */,
@@ -169,6 +192,10 @@
 		3037AE3F2783522F00C5C4D2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3088E1CE2785D06B00A5583C /* Login */,
+				3088E1CF2785D07100A5583C /* Register */,
+				304A10B32786123A0074C7DE /* Transfer */,
+				304A10B4278612410074C7DE /* Dashboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -184,6 +211,25 @@
 				3098E59A2783897E003C5A74 /* Transfer */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		304A10B32786123A0074C7DE /* Transfer */ = {
+			isa = PBXGroup;
+			children = (
+				304A10B52786129A0074C7DE /* TransferViewController.swift */,
+				304A10B62786129A0074C7DE /* TransferViewController.xib */,
+			);
+			path = Transfer;
+			sourceTree = "<group>";
+		};
+		304A10B4278612410074C7DE /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				309388D22792CE6200DC4FAD /* Cell */,
+				309388CB2792AED000DC4FAD /* DashboardViewController.swift */,
+				309388CC2792AED000DC4FAD /* DashboardViewController.xib */,
+			);
+			path = Dashboard;
 			sourceTree = "<group>";
 		};
 		3056D05127834BA600331461 = {
@@ -217,8 +263,6 @@
 				3037AE3627834FB400C5C4D2 /* Common */,
 				3056D05D27834BA600331461 /* AppDelegate.swift */,
 				3056D05F27834BA600331461 /* SceneDelegate.swift */,
-				3056D06127834BA600331461 /* ViewController.swift */,
-				3056D06327834BA600331461 /* Main.storyboard */,
 				3056D06627834BA900331461 /* Assets.xcassets */,
 				3056D06827834BA900331461 /* LaunchScreen.storyboard */,
 				3056D06B27834BA900331461 /* Info.plist */,
@@ -243,10 +287,47 @@
 			path = "glints-testUITests";
 			sourceTree = "<group>";
 		};
+		3088E1CE2785D06B00A5583C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3056D06327834BA600331461 /* Main.storyboard */,
+				3056D06127834BA600331461 /* ViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		3088E1CF2785D07100A5583C /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				3088E1D62785ED5700A5583C /* RegisterViewController.swift */,
+				3088E1D72785ED5700A5583C /* RegisterViewController.xib */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		309388CF2792CBEF00DC4FAD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				309388D02792CC0500DC4FAD /* UIView+Extensions.swift */,
+				309388D72792D67D00DC4FAD /* Numeric+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		309388D22792CE6200DC4FAD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				309388D32792CE8200DC4FAD /* TransactionHistoryCell.swift */,
+				309388D42792CE8200DC4FAD /* TransactionHistoryCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		3098E58F278363C1003C5A74 /* Util */ = {
 			isa = PBXGroup;
 			children = (
 				3098E59227836416003C5A74 /* FloatingLabelField.swift */,
+				3088E1D42785EC1A00A5583C /* UIViewController+Extensions.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -490,7 +571,11 @@
 			files = (
 				3056D06A27834BA900331461 /* LaunchScreen.storyboard in Resources */,
 				3056D06727834BA900331461 /* Assets.xcassets in Resources */,
+				309388D62792CE8200DC4FAD /* TransactionHistoryCell.xib in Resources */,
 				3056D06527834BA600331461 /* Main.storyboard in Resources */,
+				304A10B82786129A0074C7DE /* TransferViewController.xib in Resources */,
+				3088E1D92785ED5700A5583C /* RegisterViewController.xib in Resources */,
+				309388CE2792AED000DC4FAD /* DashboardViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -619,20 +704,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				3056D06227834BA600331461 /* ViewController.swift in Sources */,
+				309388CD2792AED000DC4FAD /* DashboardViewController.swift in Sources */,
 				3056D05E27834BA600331461 /* AppDelegate.swift in Sources */,
 				3037AE3827834FE900C5C4D2 /* Settings.swift in Sources */,
 				3098E5B82783981B003C5A74 /* BalanceViewModel.swift in Sources */,
+				3088E1D52785EC1A00A5583C /* UIViewController+Extensions.swift in Sources */,
 				3098E59327836416003C5A74 /* FloatingLabelField.swift in Sources */,
 				3098E5A227838BE7003C5A74 /* PayeesModel.swift in Sources */,
 				3098E59C278389C5003C5A74 /* LoginModel.swift in Sources */,
 				3037AE3B278350C600C5C4D2 /* URLConstant.swift in Sources */,
+				309388D52792CE8200DC4FAD /* TransactionHistoryCell.swift in Sources */,
 				3098E59E27838A8A003C5A74 /* RegisterModel.swift in Sources */,
 				3098E5B627839811003C5A74 /* RegisterViewModel.swift in Sources */,
 				3098E5B427839807003C5A74 /* LoginViewModel.swift in Sources */,
 				3098E5BA27839824003C5A74 /* PayeesViewModel.swift in Sources */,
+				309388D12792CC0500DC4FAD /* UIView+Extensions.swift in Sources */,
+				304A10B72786129A0074C7DE /* TransferViewController.swift in Sources */,
 				3098E5A027838BA3003C5A74 /* BalanceModel.swift in Sources */,
 				3098E5A427838CA4003C5A74 /* TransactionsModel.swift in Sources */,
 				3098E5BE2783983B003C5A74 /* TransferViewModel.swift in Sources */,
+				3088E1D82785ED5700A5583C /* RegisterViewController.swift in Sources */,
 				3056D06027834BA600331461 /* SceneDelegate.swift in Sources */,
 				3037AE3D278350CF00C5C4D2 /* URLManager.swift in Sources */,
 				3098E5A627838E76003C5A74 /* TransferModel.swift in Sources */,
@@ -641,6 +732,7 @@
 				3098E5AA27839316003C5A74 /* HeaderBuilder.swift in Sources */,
 				3098E5A827839307003C5A74 /* HeaderConstant.swift in Sources */,
 				3098E5AC278394DE003C5A74 /* APIWorker.swift in Sources */,
+				309388D82792D67D00DC4FAD /* Numeric+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
