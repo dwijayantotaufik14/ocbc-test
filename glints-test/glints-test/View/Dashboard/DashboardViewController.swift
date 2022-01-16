@@ -16,6 +16,9 @@ class DashboardViewController: UIViewController {
     
     @IBOutlet var transactionHistoryTableView: UITableView!
     
+    @IBOutlet var makeTransferButton: UIButton!
+    
+    
     var loginResponse : LoginModel.Response?
     
     var balanceViewModel = BalanceViewModel()
@@ -27,8 +30,6 @@ class DashboardViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -40,6 +41,8 @@ class DashboardViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         self.headerView.roundCorners(corners: [.topRight, .bottomRight], radius: 8)
+        
+        makeTransferButton.layer.cornerRadius = makeTransferButton.frame.height / 2
     }
     
     func getBalanceAccount() {
@@ -91,6 +94,14 @@ class DashboardViewController: UIViewController {
 
     @IBAction func logoutButtonAction(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func gotoTransferPage(_ sender: Any) {
+        let vc = TransferViewController()
+        vc.modalPresentationStyle = .fullScreen
+        vc.loginResponse = self.loginResponse
+        
+        self.present(vc, animated: true, completion: nil)
     }
     
 }

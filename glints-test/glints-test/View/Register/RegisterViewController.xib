@@ -50,8 +50,9 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="pvX-ze-4HV"/>
                     </constraints>
+                    <color key="textColor" systemColor="separatorColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelColor">
                             <color key="value" red="0.0" green="0.42745098040000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -88,7 +89,7 @@
                         <constraint firstAttribute="height" constant="50" id="BaL-ex-pJN"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelColor">
                             <color key="value" red="0.0" green="0.42745098040000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -142,6 +143,9 @@
     </objects>
     <resources>
         <image name="arrow.backward" catalog="system" width="128" height="98"/>
+        <systemColor name="separatorColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

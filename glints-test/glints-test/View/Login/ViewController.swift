@@ -90,6 +90,10 @@ class ViewController: UIViewController {
                         dashboard.loginResponse = response!
                         dashboard.modalPresentationStyle = .fullScreen
                         self.present(dashboard, animated: true, completion: nil)
+                        
+                        self.usernameTextField.text = ""
+                        self.passwordTextField.text = ""
+                        self.view.endEditing(true)
                     }
                 }else{
                     DispatchQueue.main.async {

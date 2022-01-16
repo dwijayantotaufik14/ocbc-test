@@ -10,7 +10,7 @@ import Foundation
 enum TransferModel {
     struct Request {
         var receipientAccountNo: String?
-        var amount: String?
+        var amount: Decimal?
         var description: String?
         
         func toJSON() -> [String: Any] {

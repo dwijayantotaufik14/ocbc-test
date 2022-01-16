@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1F1F31955E0E3B8396E9A1CD /* Pods_glints_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EC6B766BE92B8608AE44F60 /* Pods_glints_test.framework */; };
+		3004A09127940105004E9019 /* PayeeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004A08F27940105004E9019 /* PayeeListViewController.swift */; };
+		3004A09227940105004E9019 /* PayeeListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3004A09027940105004E9019 /* PayeeListViewController.xib */; };
+		3004A0962794037E004E9019 /* PayeeListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004A0942794037E004E9019 /* PayeeListCell.swift */; };
+		3004A0972794037E004E9019 /* PayeeListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3004A0952794037E004E9019 /* PayeeListCell.xib */; };
+		3004A09C27940E54004E9019 /* InstrinsicTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004A09B27940E54004E9019 /* InstrinsicTableView.swift */; };
 		3037AE3827834FE900C5C4D2 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3037AE3727834FE900C5C4D2 /* Settings.swift */; };
 		3037AE3B278350C600C5C4D2 /* URLConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3037AE3A278350C600C5C4D2 /* URLConstant.swift */; };
 		3037AE3D278350CF00C5C4D2 /* URLManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3037AE3C278350CF00C5C4D2 /* URLManager.swift */; };
@@ -71,6 +76,11 @@
 
 /* Begin PBXFileReference section */
 		2917847F36B0EF7986FA4374 /* Pods_glints_testTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_glints_testTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3004A08F27940105004E9019 /* PayeeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayeeListViewController.swift; sourceTree = "<group>"; };
+		3004A09027940105004E9019 /* PayeeListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PayeeListViewController.xib; sourceTree = "<group>"; };
+		3004A0942794037E004E9019 /* PayeeListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayeeListCell.swift; sourceTree = "<group>"; };
+		3004A0952794037E004E9019 /* PayeeListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PayeeListCell.xib; sourceTree = "<group>"; };
+		3004A09B27940E54004E9019 /* InstrinsicTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrinsicTableView.swift; sourceTree = "<group>"; };
 		3037AE3727834FE900C5C4D2 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		3037AE3A278350C600C5C4D2 /* URLConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConstant.swift; sourceTree = "<group>"; };
 		3037AE3C278350CF00C5C4D2 /* URLManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLManager.swift; sourceTree = "<group>"; };
@@ -153,9 +163,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3004A08E27940080004E9019 /* Payee List */ = {
+			isa = PBXGroup;
+			children = (
+				3004A09327940362004E9019 /* Cell */,
+				3004A08F27940105004E9019 /* PayeeListViewController.swift */,
+				3004A09027940105004E9019 /* PayeeListViewController.xib */,
+			);
+			path = "Payee List";
+			sourceTree = "<group>";
+		};
+		3004A09327940362004E9019 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3004A0942794037E004E9019 /* PayeeListCell.swift */,
+				3004A0952794037E004E9019 /* PayeeListCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		3004A09827940A6A004E9019 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				3004A09B27940E54004E9019 /* InstrinsicTableView.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
 		3037AE3627834FB400C5C4D2 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				3004A09827940A6A004E9019 /* TableView */,
 				309388CF2792CBEF00DC4FAD /* Extensions */,
 				3098E58F278363C1003C5A74 /* Util */,
 				3037AE392783509800C5C4D2 /* Network */,
@@ -216,6 +254,7 @@
 		304A10B32786123A0074C7DE /* Transfer */ = {
 			isa = PBXGroup;
 			children = (
+				3004A08E27940080004E9019 /* Payee List */,
 				304A10B52786129A0074C7DE /* TransferViewController.swift */,
 				304A10B62786129A0074C7DE /* TransferViewController.xib */,
 			);
@@ -571,7 +610,9 @@
 			files = (
 				3056D06A27834BA900331461 /* LaunchScreen.storyboard in Resources */,
 				3056D06727834BA900331461 /* Assets.xcassets in Resources */,
+				3004A0972794037E004E9019 /* PayeeListCell.xib in Resources */,
 				309388D62792CE8200DC4FAD /* TransactionHistoryCell.xib in Resources */,
+				3004A09227940105004E9019 /* PayeeListViewController.xib in Resources */,
 				3056D06527834BA600331461 /* Main.storyboard in Resources */,
 				304A10B82786129A0074C7DE /* TransferViewController.xib in Resources */,
 				3088E1D92785ED5700A5583C /* RegisterViewController.xib in Resources */,
@@ -723,6 +764,7 @@
 				3098E5A027838BA3003C5A74 /* BalanceModel.swift in Sources */,
 				3098E5A427838CA4003C5A74 /* TransactionsModel.swift in Sources */,
 				3098E5BE2783983B003C5A74 /* TransferViewModel.swift in Sources */,
+				3004A09C27940E54004E9019 /* InstrinsicTableView.swift in Sources */,
 				3088E1D82785ED5700A5583C /* RegisterViewController.swift in Sources */,
 				3056D06027834BA600331461 /* SceneDelegate.swift in Sources */,
 				3037AE3D278350CF00C5C4D2 /* URLManager.swift in Sources */,
@@ -731,7 +773,9 @@
 				3037AE42278352FD00C5C4D2 /* APIManager.swift in Sources */,
 				3098E5AA27839316003C5A74 /* HeaderBuilder.swift in Sources */,
 				3098E5A827839307003C5A74 /* HeaderConstant.swift in Sources */,
+				3004A09127940105004E9019 /* PayeeListViewController.swift in Sources */,
 				3098E5AC278394DE003C5A74 /* APIWorker.swift in Sources */,
+				3004A0962794037E004E9019 /* PayeeListCell.swift in Sources */,
 				309388D82792D67D00DC4FAD /* Numeric+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

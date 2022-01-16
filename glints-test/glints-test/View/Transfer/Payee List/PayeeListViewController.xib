@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PayeeListViewController" customModule="glints_test" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="Wgt-ju-jps" id="VVd-kE-0Jr"/>
+                <outlet property="payeeTableView" destination="P9k-MN-Flz" id="pJO-ui-D1V"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wgt-ju-jps">
+                    <rect key="frame" x="0.0" y="396" width="414" height="500"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8M-nN-5a8">
+                            <rect key="frame" x="16" y="24" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="FVe-b8-2gl"/>
+                                <constraint firstAttribute="width" secondItem="o8M-nN-5a8" secondAttribute="height" multiplier="1:1" id="o3i-dT-o5a"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="ic-x-btn"/>
+                            <connections>
+                                <action selector="closeButtonAction:" destination="-1" eventType="touchUpInside" id="seC-bK-v8G"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payee List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33x-VH-qbg" customClass="CustomLabel" customModule="Laba_id" customModuleProvider="target">
+                            <rect key="frame" x="16" y="56" width="105" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="clh-aB-9QR"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="fontSizex">
+                                    <real key="value" value="24"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="fontStyle">
+                                    <integer key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="350" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="P9k-MN-Flz" customClass="InstrinsicTableView" customModule="glints_test" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="106" width="414" height="350"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="P9k-MN-Flz" firstAttribute="top" secondItem="33x-VH-qbg" secondAttribute="bottom" constant="20" id="CkB-N7-WCc"/>
+                        <constraint firstAttribute="trailing" secondItem="P9k-MN-Flz" secondAttribute="trailing" id="EyV-dX-KGg"/>
+                        <constraint firstItem="33x-VH-qbg" firstAttribute="top" secondItem="o8M-nN-5a8" secondAttribute="bottom" constant="8" id="Ogw-4a-cx6"/>
+                        <constraint firstItem="P9k-MN-Flz" firstAttribute="leading" secondItem="Wgt-ju-jps" secondAttribute="leading" id="UDm-f4-GOa"/>
+                        <constraint firstItem="33x-VH-qbg" firstAttribute="leading" secondItem="o8M-nN-5a8" secondAttribute="leading" id="Vc4-Hk-qTl"/>
+                        <constraint firstItem="o8M-nN-5a8" firstAttribute="leading" secondItem="Wgt-ju-jps" secondAttribute="leading" constant="16" id="lVN-4a-hh7"/>
+                        <constraint firstAttribute="bottom" secondItem="P9k-MN-Flz" secondAttribute="bottom" constant="44" id="nI7-af-YTc"/>
+                        <constraint firstItem="o8M-nN-5a8" firstAttribute="top" secondItem="Wgt-ju-jps" secondAttribute="top" constant="24" id="zqS-22-g4n"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Wgt-ju-jps" secondAttribute="bottom" id="8u8-EX-CGc"/>
+                <constraint firstItem="Wgt-ju-jps" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Gi7-qd-kL8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Wgt-ju-jps" secondAttribute="trailing" id="HR5-SL-tKY"/>
+                <constraint firstItem="Wgt-ju-jps" firstAttribute="top" relation="greaterThanOrEqual" secondItem="fnl-2z-Ty3" secondAttribute="top" id="TNS-oV-lcA"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="129.91071428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic-x-btn" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -11,7 +11,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TransferViewController" customModule="glints_test" customModuleProvider="target">
             <connections>
+                <outlet property="amountTextfield" destination="L9z-Yb-Vae" id="e6W-R6-uRN"/>
                 <outlet property="descriptionTextView" destination="Obi-Jh-Wy2" id="dWM-vH-rzW"/>
+                <outlet property="descriptionView" destination="mk8-TW-4Hq" id="ycc-bK-3nK"/>
+                <outlet property="payeeTextfield" destination="sKz-gT-nTW" id="dfp-Ty-5EP"/>
+                <outlet property="transferButton" destination="E4Q-hH-Oan" id="kRI-od-jWR"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -53,6 +57,9 @@
                     <state key="normal" backgroundImage="arrow.backward" catalog="system">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="backButtonAction:" destination="-1" eventType="touchUpInside" id="Hol-I4-jmv"/>
+                    </connections>
                 </button>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L9z-Yb-Vae" customClass="FloatingLabelField" customModule="glints_test" customModuleProvider="target">
                     <rect key="frame" x="35" y="278" width="344" height="50"/>
@@ -60,7 +67,7 @@
                         <constraint firstAttribute="height" constant="50" id="DaQ-AJ-HOb"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelColor">
                             <color key="value" red="0.0" green="0.42745098040000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -70,6 +77,36 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mk8-TW-4Hq">
+                    <rect key="frame" x="35" y="352" width="344" height="89"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vG-kd-6St">
+                            <rect key="frame" x="4" y="4" width="68" height="15"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="15" id="7R7-Z5-eby"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="0.0" placeholderIntrinsicHeight="50" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Obi-Jh-Wy2">
+                            <rect key="frame" x="0.0" y="31" width="344" height="50"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <color key="textColor" systemColor="labelColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="Obi-Jh-Wy2" firstAttribute="top" secondItem="9vG-kd-6St" secondAttribute="bottom" constant="12" id="28a-1I-adK"/>
+                        <constraint firstItem="9vG-kd-6St" firstAttribute="top" secondItem="mk8-TW-4Hq" secondAttribute="top" constant="4" id="6Lf-6T-jGn"/>
+                        <constraint firstItem="Obi-Jh-Wy2" firstAttribute="leading" secondItem="mk8-TW-4Hq" secondAttribute="leading" id="6tu-IL-Ljk"/>
+                        <constraint firstAttribute="trailing" secondItem="Obi-Jh-Wy2" secondAttribute="trailing" id="kgm-wV-7NU"/>
+                        <constraint firstItem="9vG-kd-6St" firstAttribute="leading" secondItem="mk8-TW-4Hq" secondAttribute="leading" constant="4" id="sbu-kL-vVu"/>
+                        <constraint firstAttribute="bottom" secondItem="Obi-Jh-Wy2" secondAttribute="bottom" constant="8" id="wia-Nv-sh5"/>
+                    </constraints>
+                </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4Q-hH-Oan">
                     <rect key="frame" x="35" y="792" width="344" height="50"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -81,29 +118,25 @@
                     <state key="normal" title="Transfer Now">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="transferButtonAction:" destination="-1" eventType="touchUpInside" id="avZ-cn-ce8"/>
+                    </connections>
                 </button>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="0.0" placeholderIntrinsicHeight="50" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Obi-Jh-Wy2">
-                    <rect key="frame" x="35" y="352" width="344" height="50"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <color key="textColor" systemColor="labelColor"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                </textView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="mk8-TW-4Hq" firstAttribute="leading" secondItem="L9z-Yb-Vae" secondAttribute="leading" id="0ll-sY-ek9"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="E4Q-hH-Oan" secondAttribute="bottom" constant="20" id="2Db-rt-A11"/>
                 <constraint firstItem="sKz-gT-nTW" firstAttribute="leading" secondItem="jUH-Zo-Qah" secondAttribute="leading" id="47Z-va-kwN"/>
-                <constraint firstItem="Obi-Jh-Wy2" firstAttribute="top" secondItem="L9z-Yb-Vae" secondAttribute="bottom" constant="24" id="58k-TP-h3b"/>
                 <constraint firstItem="L9z-Yb-Vae" firstAttribute="trailing" secondItem="sKz-gT-nTW" secondAttribute="trailing" id="Azn-J8-cco"/>
                 <constraint firstItem="E4Q-hH-Oan" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="35" id="DG5-xZ-Xif"/>
                 <constraint firstItem="L9z-Yb-Vae" firstAttribute="top" secondItem="sKz-gT-nTW" secondAttribute="bottom" constant="24" id="EEN-Yc-sv0"/>
-                <constraint firstItem="Obi-Jh-Wy2" firstAttribute="trailing" secondItem="L9z-Yb-Vae" secondAttribute="trailing" id="Lnd-EI-HZQ"/>
                 <constraint firstItem="sKz-gT-nTW" firstAttribute="top" secondItem="jUH-Zo-Qah" secondAttribute="bottom" constant="45" id="Lx0-kZ-TDb"/>
-                <constraint firstItem="Obi-Jh-Wy2" firstAttribute="leading" secondItem="L9z-Yb-Vae" secondAttribute="leading" id="Q9C-qb-jlt"/>
+                <constraint firstItem="mk8-TW-4Hq" firstAttribute="trailing" secondItem="L9z-Yb-Vae" secondAttribute="trailing" id="Na4-pb-064"/>
                 <constraint firstItem="jUH-Zo-Qah" firstAttribute="top" secondItem="GmE-vV-kIV" secondAttribute="bottom" constant="15" id="QLM-Mu-R2L"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sKz-gT-nTW" secondAttribute="trailing" constant="35" id="QnR-ta-CTE"/>
+                <constraint firstItem="mk8-TW-4Hq" firstAttribute="top" secondItem="L9z-Yb-Vae" secondAttribute="bottom" constant="24" id="V5l-Rc-IbI"/>
                 <constraint firstItem="L9z-Yb-Vae" firstAttribute="leading" secondItem="sKz-gT-nTW" secondAttribute="leading" id="Wq4-xo-wmP"/>
                 <constraint firstItem="GmE-vV-kIV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="fgI-Nl-gXr"/>
                 <constraint firstItem="GmE-vV-kIV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="35" id="gOw-YD-NUy"/>
